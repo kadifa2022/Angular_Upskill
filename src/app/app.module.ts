@@ -6,11 +6,16 @@ import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { RouterModule, Routes } from '@angular/router';
+import { RoutingComponent } from './routing/routing.component';
+import { ParentComponent } from './xcomm/parent/parent.component';
+import { ChildComponent } from './xcomm/child/child.component';
 
 
 const routes: Routes =[
   {path:'bindings', component: BindingComponent},
   {path:'directives', component: DirectivesComponent},
+  {path:"routing/:productid", component: RoutingComponent},
+  {path:'xcomm', component: ParentComponent},
   {path: '**', component: BindingComponent}
 ]
 
@@ -18,7 +23,11 @@ const routes: Routes =[
   declarations: [
     AppComponent,
     BindingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    RoutingComponent,
+    ParentComponent,
+    ChildComponent
+    
   ],
   imports: [
     BrowserModule,
