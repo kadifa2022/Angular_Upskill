@@ -18,8 +18,11 @@ constructor(){}
 
   onSelectedMentor(mentor: string){
     this.mentorSelected = mentor;
-    console.log(this.mentorSelected);
+   
 
+  }
+  onLikeMentor(event: any){
+    console.log(event);
   }
 
 
