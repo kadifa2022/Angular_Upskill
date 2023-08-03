@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -14,8 +14,8 @@ import { ChildComponent } from './xcomm/child/child.component';
 const routes: Routes =[
   {path:'bindings', component: BindingComponent},
   {path:'directives', component: DirectivesComponent},
-  {path:"routing/:productid", component: RoutingComponent},
-  {path:'xcomm', component: ParentComponent},
+  {path: "routing/:productid", component: RoutingComponent},
+  {path: "xcomm", component: ParentComponent},
   {path: '**', component: BindingComponent}
 ]
 

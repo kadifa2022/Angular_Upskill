@@ -16,7 +16,7 @@ export class RoutingComponent implements OnInit, OnDestroy{
 }
 ngOnInit(): void {
   console.log("This is ngOnInit")
-  this.productId = this.route.snapshot.params['productid]'];
+  this.productId = this.route.snapshot.params['productid'];
   //When you make some connections, we need to close this connection in ngOnDestroy..
 }
 
