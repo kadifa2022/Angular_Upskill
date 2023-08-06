@@ -9,8 +9,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { RoutingComponent } from './routing/routing.component';
 import { ParentComponent } from './xcomm/parent/parent.component';
 import { ChildComponent } from './xcomm/child/child.component';
-import { DetailsComponent } from './interComm/details/details.component';
-import { LikeComponent } from './interComm/like/like.component';
+import { DetailComponent } from './interComm/details/details.component';
+import { ListComponent } from './interComm/like/like.component';
+import { HttpClientModule } from'@angular/common/http';
 
 
 const routes: Routes =[
@@ -18,8 +19,8 @@ const routes: Routes =[
   {path:'directives', component: DirectivesComponent},
   {path: "routing/:productid", component: RoutingComponent},
   {path: "xcomm", component: ParentComponent},
-  {path: "intercomm", component: DetailsComponent},
-  {path: "listComm", component: LikeComponent},
+  {path: "intercomm", component: DetailComponent},
+  {path: "listComm", component: ListComponent},
   {path: '**', component: BindingComponent}
 ]
 
@@ -31,14 +32,16 @@ const routes: Routes =[
     RoutingComponent,
     ParentComponent,
     ChildComponent,
-    DetailsComponent,
-    LikeComponent
+    DetailComponent,
+    ListComponent
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
+    
 
   ],
   exports:[RouterModule],
