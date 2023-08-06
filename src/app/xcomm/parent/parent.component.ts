@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit{
 mentors: string [] = ['Ower', 'Mat', 'Sahin'];
-mentorSelected: string ='Ower';
+mentorSelected: string = 'Ower';
 constructor(){}
 
 
@@ -16,7 +16,7 @@ constructor(){}
     throw new Error('Method not implemented.');
   }
 
-  onSelectedMentor(mentor: string){
+  onSelectMentor(mentor: string){
     this.mentorSelected = mentor;
    
 
