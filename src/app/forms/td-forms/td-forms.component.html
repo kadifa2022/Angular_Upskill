@@ -2,7 +2,7 @@
 <form style="width: 500px;" #form="ngForm" (ngSubmit)="onSubmit(form)" >
     <div>
       <label for="name" class="form-label" >Name:</label>
-      <input class="form-control" type="text" id="name" name="name" ngModel required/>
+      <input class="form-control" type="text" id="name" name="name" ngModel required minlength="8"/>
     </div>
     <div>
       <label for="email" class="form-label">Email:</label>
