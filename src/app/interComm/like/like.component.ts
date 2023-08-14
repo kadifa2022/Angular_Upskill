@@ -17,6 +17,7 @@ constructor(private service: MentorService, private router: Router){}
 
   ngOnInit(): void {
     this.mentors = this.service.getAllMentors();
+    console.log("ng oninit called in like component");
     
   }
   onSelectMentor(mentor: Mentor){

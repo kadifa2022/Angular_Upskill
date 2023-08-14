@@ -15,6 +15,7 @@ export class DetailComponent implements OnInit{
 
   ngOnInit(): void {
    this.selectedMentor = this.service.selectedMentor;
+   console.log("ng oninit called in detail component")
   }
 
   onLikeMentor(selectedMentor: any){

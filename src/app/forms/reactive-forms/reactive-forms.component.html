@@ -16,5 +16,5 @@
       <label for="message" class="form-label">Message:</label>
       <textarea id="message" class="form-control" formControlName="message"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary mt-3" [disabled]="myForm.pristine">Submit</button>
+    <button type="submit" class="btn btn-primary mt-3" [disabled]="myForm.valid">Submit</button>
   </form>
